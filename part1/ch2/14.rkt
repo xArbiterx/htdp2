@@ -3,7 +3,7 @@
 #reader(lib "htdp-beginner-reader.ss" "lang")((modname |14|) (read-case-sensitive #t) (teachpacks ((lib "image.rkt" "teachpack" "2htdp"))) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ((lib "image.rkt" "teachpack" "2htdp")) #f)))
 (define (string-last str)
   (if (> (string-length str) 0)
-      (substring str (- (string-length str) 1) (string-length str))
+      (substring str (- (string-length str) 1))
       0))
 
 (string-last "str")
